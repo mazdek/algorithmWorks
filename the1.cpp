@@ -3,6 +3,12 @@
 
 using namespace std;
 
+vector<int> divideAndConquerSkyline( vector< vector<int> > buildings )
+{
+	vector<int> result;
+
+	return result;
+}
 
 int main(int argc, char const *argv[])
 {
@@ -46,7 +52,13 @@ int main(int argc, char const *argv[])
 	}
 	else
 	{
-		//TODO implement n*logn solution
+		temp.clear();
+		temp = divideAndConquerSkyline( buildings );
+
+		for (int i = 0; i < temp.size()/2; i+=2)
+		{
+			cout << temp[i] << " " << temp[ i+1 ] << endl;
+		}
 	}
 
 	return 0;
